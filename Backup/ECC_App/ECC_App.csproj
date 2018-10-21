@@ -1,0 +1,726 @@
+﻿<Project ToolsVersion="3.5" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{7ECB9C36-686F-45B4-8A0C-F71319936046}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ECC_App</RootNamespace>
+    <AssemblyName>ECC_App</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <ApplicationIcon>ECC_Logo.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AjaxControlToolkit, Version=1.0.20229.17494, Culture=neutral, PublicKeyToken=28f01b0e84b6d53e, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Raj New Code\AMS_APP\AMS\Bin\AjaxControlToolkit.dll</HintPath>
+    </Reference>
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=10.5.3700.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.Enterprise.Framework, Version=10.5.3700.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.Enterprise.InfoStore, Version=10.5.3700.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.ReportSource, Version=10.5.3700.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.Shared, Version=10.5.3700.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="obout_Calendar2_Net, Version=2.9.2.0, Culture=neutral, PublicKeyToken=b114d8766feff9ce, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Softwares\oboutSuite\bin\obout_Calendar2_Net.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core, Version=3.5.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Web.Extensions, Version=3.5.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Web.Extensions.Design, Version=3.5.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web.Mobile" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Admin\About.aspx.cs">
+      <DependentUpon>About.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\About.aspx.designer.cs">
+      <DependentUpon>About.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\AdministrationList.aspx.cs">
+      <DependentUpon>AdministrationList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\AdministrationList.aspx.designer.cs">
+      <DependentUpon>AdministrationList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\ChangePassword.aspx.cs">
+      <DependentUpon>ChangePassword.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\ChangePassword.aspx.designer.cs">
+      <DependentUpon>ChangePassword.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\EditUser.aspx.cs">
+      <DependentUpon>EditUser.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\EditUser.aspx.designer.cs">
+      <DependentUpon>EditUser.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\ManageLocked.aspx.cs">
+      <DependentUpon>ManageLocked.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\ManageLocked.aspx.designer.cs">
+      <DependentUpon>ManageLocked.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\ManageUsers.aspx.cs">
+      <DependentUpon>ManageUsers.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\ManageUsers.aspx.designer.cs">
+      <DependentUpon>ManageUsers.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\ManagLockedAccounts.aspx.cs">
+      <DependentUpon>ManagLockedAccounts.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\ManagLockedAccounts.aspx.designer.cs">
+      <DependentUpon>ManagLockedAccounts.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\NewUser.aspx.cs">
+      <DependentUpon>NewUser.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\NewUser.aspx.designer.cs">
+      <DependentUpon>NewUser.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\ReportList.aspx.cs">
+      <DependentUpon>ReportList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Reports\ReportList.aspx.designer.cs">
+      <DependentUpon>ReportList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\UnauthorizedAccess.aspx.cs">
+      <DependentUpon>UnauthorizedAccess.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\UnauthorizedAccess.aspx.designer.cs">
+      <DependentUpon>UnauthorizedAccess.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\UserInformation.aspx.cs">
+      <DependentUpon>UserInformation.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\UserInformation.aspx.designer.cs">
+      <DependentUpon>UserInformation.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Verification.aspx.cs">
+      <DependentUpon>Verification.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Verification.aspx.designer.cs">
+      <DependentUpon>Verification.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="BaseController\BaseController.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BaseController\ReportCon.cs" />
+    <Compile Include="DefaultError.aspx.cs">
+      <DependentUpon>DefaultError.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DefaultError.aspx.designer.cs">
+      <DependentUpon>DefaultError.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="EntryForms\ExcelBulkUpload.aspx.cs">
+      <DependentUpon>ExcelBulkUpload.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="EntryForms\ExcelBulkUpload.aspx.designer.cs">
+      <DependentUpon>ExcelBulkUpload.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="EntryForms\UnderConstruction.aspx.cs">
+      <DependentUpon>UnderConstruction.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="EntryForms\UnderConstruction.aspx.designer.cs">
+      <DependentUpon>UnderConstruction.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Lookups\Case_Priorty.aspx.cs">
+      <DependentUpon>Case_Priorty.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Lookups\Case_Priorty.aspx.designer.cs">
+      <DependentUpon>Case_Priorty.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="EntryForms\ComplainDetail.aspx.cs">
+      <DependentUpon>ComplainDetail.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="EntryForms\ComplainDetail.aspx.designer.cs">
+      <DependentUpon>ComplainDetail.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="EntryForms\ComplainList.aspx.cs">
+      <DependentUpon>ComplainList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="EntryForms\ComplainList.aspx.designer.cs">
+      <DependentUpon>ComplainList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pop_Ups.aspx.cs">
+      <DependentUpon>Pop_Ups.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pop_Ups.aspx.designer.cs">
+      <DependentUpon>Pop_Ups.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\ComplaintStatusA.aspx.cs">
+      <DependentUpon>ComplaintStatusA.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Reports\ComplaintStatusA.aspx.designer.cs">
+      <DependentUpon>ComplaintStatusA.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\ComplaintStatusA_RPT.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ComplaintStatusA_RPT.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\Complaint_Allegation.aspx.cs">
+      <DependentUpon>Complaint_Allegation.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Reports\Complaint_Allegation.aspx.designer.cs">
+      <DependentUpon>Complaint_Allegation.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\Complaint_Allegation_RPT.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Complaint_Allegation_RPT.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\Complaint_Candidate.aspx.cs">
+      <DependentUpon>Complaint_Candidate.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Reports\Complaint_Candidate.aspx.designer.cs">
+      <DependentUpon>Complaint_Candidate.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\Complaint_Candidate_RPT.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Complaint_Candidate_RPT.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\Complaint_ComplainType.aspx.cs">
+      <DependentUpon>Complaint_ComplainType.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Reports\Complaint_ComplainType.aspx.designer.cs">
+      <DependentUpon>Complaint_ComplainType.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\Complaint_ComplainType_RPT.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Complaint_ComplainType_RPT.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\Complaint_Gender.aspx.cs">
+      <DependentUpon>Complaint_Gender.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Reports\Complaint_Gender.aspx.designer.cs">
+      <DependentUpon>Complaint_Gender.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\Complaint_Gender_RPT.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Complaint_Gender_RPT.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\Complaint_Respondent.aspx.cs">
+      <DependentUpon>Complaint_Respondent.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Reports\Complaint_Respondent.aspx.designer.cs">
+      <DependentUpon>Complaint_Respondent.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\Complaint_Respondent_RPT.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Complaint_Respondent_RPT.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\Complaint_Sanction.aspx.cs">
+      <DependentUpon>Complaint_Sanction.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Reports\Complaint_Sanction.aspx.designer.cs">
+      <DependentUpon>Complaint_Sanction.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\Complaint_Sanction_RPT.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Complaint_Sanction_RPT.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\Complaint_Status.aspx.cs">
+      <DependentUpon>Complaint_Status.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Reports\Complaint_Status.aspx.designer.cs">
+      <DependentUpon>Complaint_Status.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\Complaint_Status_RPT.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Complaint_Status_RPT.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\Complain_Priorties.aspx.cs">
+      <DependentUpon>Complain_Priorties.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Reports\Complain_Priorties.aspx.designer.cs">
+      <DependentUpon>Complain_Priorties.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\Complain_Priorties_RPT.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Complain_Priorties_RPT.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Admin\Login.aspx.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Login.aspx.designer.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MasterPages\LoginPage.Master.cs">
+      <DependentUpon>LoginPage.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MasterPages\LoginPage.Master.designer.cs">
+      <DependentUpon>LoginPage.Master</DependentUpon>
+    </Compile>
+    <Compile Include="MasterPages\MainPage.Master.cs">
+      <DependentUpon>MainPage.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MasterPages\MainPage.Master.designer.cs">
+      <DependentUpon>MainPage.Master</DependentUpon>
+    </Compile>
+    <Compile Include="EntryForms\ManageComplain.aspx.cs">
+      <DependentUpon>ManageComplain.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="EntryForms\ManageComplain.aspx.designer.cs">
+      <DependentUpon>ManageComplain.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Reports\Respondent_Gender.aspx.cs">
+      <DependentUpon>Respondent_Gender.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Reports\Respondent_Gender.aspx.designer.cs">
+      <DependentUpon>Respondent_Gender.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\Respondent_Gender_RPT.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Respondent_Gender_RPT.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\_ComplaintTypeReport.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>_ComplaintTypeReport.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\_ComplaintTypeRPT.aspx.cs">
+      <DependentUpon>_ComplaintTypeRPT.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Reports\_ComplaintTypeRPT.aspx.designer.cs">
+      <DependentUpon>_ComplaintTypeRPT.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\_HQ_Decision.aspx.cs">
+      <DependentUpon>_HQ_Decision.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Reports\_HQ_Decision.aspx.designer.cs">
+      <DependentUpon>_HQ_Decision.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\_HQ_DecisionRPT.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>_HQ_DecisionRPT.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\_PECC_Decision.aspx.cs">
+      <DependentUpon>_PECC_Decision.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Reports\_PECC_Decision.aspx.designer.cs">
+      <DependentUpon>_PECC_Decision.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\_PECC_DecisionRPT.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>_PECC_DecisionRPT.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\_ReposdentTypeRPT.aspx.cs">
+      <DependentUpon>_ReposdentTypeRPT.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Reports\_ReposdentTypeRPT.aspx.designer.cs">
+      <DependentUpon>_ReposdentTypeRPT.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\_RespondentTypeReport.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>_RespondentTypeReport.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\_SanctionTypeReport.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>_SanctionTypeReport.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\_SanctionTypeRPT.aspx.cs">
+      <DependentUpon>_SanctionTypeRPT.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Reports\_SanctionTypeRPT.aspx.designer.cs">
+      <DependentUpon>_SanctionTypeRPT.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\_StaticReport.aspx.cs">
+      <DependentUpon>_StaticReport.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Reports\_StaticReport.aspx.designer.cs">
+      <DependentUpon>_StaticReport.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\_StaticReportRpt.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>_StaticReportRpt.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\_StatusTypeReport.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>_StatusTypeReport.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\_StatusTypeRPT.aspx.cs">
+      <DependentUpon>_StatusTypeRPT.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Reports\_StatusTypeRPT.aspx.designer.cs">
+      <DependentUpon>_StatusTypeRPT.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Search_Panel\SearchFrm.aspx.cs">
+      <DependentUpon>SearchFrm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Search_Panel\SearchFrm.aspx.designer.cs">
+      <DependentUpon>SearchFrm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Testing.aspx.cs">
+      <DependentUpon>Testing.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Testing.aspx.designer.cs">
+      <DependentUpon>Testing.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebForm1.aspx.cs">
+      <DependentUpon>WebForm1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebForm1.aspx.designer.cs">
+      <DependentUpon>WebForm1.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="CommonMessages\CommonMessages.xml" />
+    <Content Include="EntryForms\ComplainList.aspx" />
+    <Content Include="images\add.gif" />
+    <Content Include="images\add_2.gif" />
+    <Content Include="images\admin_ico.gif" />
+    <Content Include="images\cncl.gif" />
+    <Content Include="images\cncl2.gif" />
+    <Content Include="images\del.gif" />
+    <Content Include="images\edt.gif" />
+    <Content Include="images\index_17.gif" />
+    <Content Include="images\login_icon.gif" />
+    <Content Include="images\logo.gif" />
+    <Content Include="images\logos.gif" />
+    <Content Include="images\logo_17.gif" />
+    <Content Include="images\menu_head.gif" />
+    <Content Include="images\mid_blk_end.gif" />
+    <Content Include="images\mid_blk_rep.gif" />
+    <Content Include="images\name_bg_rep.gif" />
+    <Content Include="images\name_end.gif" />
+    <Content Include="images\name_start.gif" />
+    <Content Include="images\save.gif" />
+    <Content Include="images\save_2.gif" />
+    <Content Include="images\selected_template_06.gif" />
+    <Content Include="images\spacer.gif" />
+    <Content Include="images\top_bg_rep.gif" />
+    <Content Include="images\ttl_bgrep.gif" />
+    <Content Include="images\ttl_end.gif" />
+    <Content Include="images\ttl_start.gif" />
+    <Content Include="images\user_bg_rep.gif" />
+    <Content Include="images\user_end.gif" />
+    <Content Include="images\user_start.gif" />
+    <Content Include="images\user_top_rep.gif" />
+    <Content Include="images\user_ttl_end.gif" />
+    <Content Include="images\user_ttl_rep.gif" />
+    <Content Include="images\user_ttl_start.gif" />
+    <Content Include="images\view.gif" />
+    <Content Include="images\x.gif" />
+    <Content Include="EntryForms\ManageComplain.aspx" />
+    <Content Include="Scripts\Styless.css" />
+    <Content Include="SpryAssets\SpryMenuBar.js" />
+    <Content Include="SpryAssets\SpryMenuBarDown.gif" />
+    <Content Include="SpryAssets\SpryMenuBarDownHover.gif" />
+    <Content Include="SpryAssets\SpryMenuBarHorizontal.css" />
+    <Content Include="SpryAssets\SpryMenuBarRight.gif" />
+    <Content Include="SpryAssets\SpryMenuBarRightHover.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\DALClassess\DALClassess.csproj">
+      <Project>{0728CFBA-C1F5-457F-BF8F-63BE3BEBD43E}</Project>
+      <Name>DALClassess</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="bin\AjaxControlToolkit.dll" />
+    <Content Include="bin\DALClassess.dll" />
+    <Content Include="bin\DALClassess.pdb" />
+    <Content Include="bin\ECC_App.dll" />
+    <Content Include="bin\ECC_App.pdb" />
+    <Content Include="EntryForms\ComplainDetail.aspx" />
+    <Content Include="images\dir.gif" />
+    <Content Include="images\doc.gif" />
+    <Content Include="images\exe.gif" />
+    <Content Include="images\gif.gif" />
+    <Content Include="images\html.gif" />
+    <Content Include="images\images.bmp" />
+    <Content Include="images\img.gif" />
+    <Content Include="images\jar.gif" />
+    <Content Include="images\jpg.gif" />
+    <Content Include="images\mid.gif" />
+    <Content Include="images\mp3.gif" />
+    <Content Include="images\pdf.gif" />
+    <Content Include="images\png.gif" />
+    <Content Include="images\ppt.gif" />
+    <Content Include="images\txt.gif" />
+    <Content Include="images\unknown.gif" />
+    <Content Include="images\wav.gif" />
+    <Content Include="images\wma.gif" />
+    <Content Include="images\wmv.gif" />
+    <Content Include="images\xls.gif" />
+    <Content Include="images\zip.gif" />
+    <Content Include="MasterPages\MainPage.Master" />
+    <Content Include="Scripts\ModalDialogs.css" />
+    <Content Include="Testing.aspx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{967B4E0D-AD0C-4609-AB67-0FA40C0206D8}" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Admin\About.aspx" />
+    <Content Include="Admin\AdministrationList.aspx" />
+    <Content Include="Admin\ChangePassword.aspx" />
+    <Content Include="Admin\EditUser.aspx" />
+    <Content Include="Admin\ManageLocked.aspx" />
+    <Content Include="Admin\ManageUsers.aspx" />
+    <Content Include="Admin\ManagLockedAccounts.aspx" />
+    <Content Include="Admin\NewUser.aspx" />
+    <Content Include="Reports\ReportList.aspx" />
+    <Content Include="Admin\UnauthorizedAccess.aspx" />
+    <Content Include="Admin\UserInformation.aspx" />
+    <Content Include="Admin\Verification.aspx" />
+    <Content Include="bin\AjaxControlToolkit.pdb" />
+    <Content Include="bin\dbConnection.xml" />
+    <Content Include="bin\obout_Calendar2_Net.dll" />
+    <Content Include="DefaultError.aspx" />
+    <Content Include="ECC_Logo.ico" />
+    <Content Include="EntryForms\ExcelBulkUpload.aspx" />
+    <Content Include="EntryForms\UnderConstruction.aspx" />
+    <Content Include="images\Calendar.gif" />
+    <Content Include="images\orbitz\arrowDown.gif" />
+    <Content Include="images\orbitz\arrowUp.gif" />
+    <Content Include="images\orbitz\button.GIF" />
+    <Content Include="images\orbitz\left.GIF" />
+    <Content Include="images\orbitz\right.GIF" />
+    <Content Include="images\orbitz\style.css" />
+    <Content Include="Lookups\Case_Priorty.aspx" />
+    <Content Include="Pop_Ups.aspx" />
+    <Content Include="Reports\ComplaintStatusA.aspx" />
+    <Content Include="Reports\Complaint_Allegation.aspx" />
+    <Content Include="Reports\Complaint_Candidate.aspx" />
+    <Content Include="Reports\Complaint_ComplainType.aspx" />
+    <Content Include="Reports\Complaint_Gender.aspx" />
+    <Content Include="Reports\Complaint_Respondent.aspx" />
+    <Content Include="Reports\Complaint_Sanction.aspx" />
+    <Content Include="Reports\Complaint_Status.aspx" />
+    <Content Include="Reports\Complain_Priorties.aspx" />
+    <Content Include="Admin\Login.aspx" />
+    <Content Include="MasterPages\LoginPage.Master" />
+    <Content Include="Reports\Respondent_Gender.aspx" />
+    <Content Include="Reports\_ComplaintTypeRPT.aspx" />
+    <Content Include="Reports\_HQ_Decision.aspx" />
+    <Content Include="Reports\_PECC_Decision.aspx" />
+    <Content Include="Reports\_ReposdentTypeRPT.aspx" />
+    <Content Include="Reports\_SanctionTypeRPT.aspx" />
+    <Content Include="Reports\_StaticReport.aspx" />
+    <Content Include="Reports\_StatusTypeRPT.aspx" />
+    <Content Include="Search_Panel\SearchFrm.aspx" />
+    <Content Include="WebForm1.aspx" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Reports\ComplaintStatusA_RPT.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>ComplaintStatusA_RPT.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\Complaint_Allegation_RPT.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Complaint_Allegation_RPT.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\Complaint_Candidate_RPT.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Complaint_Candidate_RPT.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\Complaint_ComplainType_RPT.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Complaint_ComplainType_RPT.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\Complaint_Gender_RPT.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Complaint_Gender_RPT.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\Complaint_Respondent_RPT.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Complaint_Respondent_RPT.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\Complaint_Sanction_RPT.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Complaint_Sanction_RPT.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\Complaint_Status_RPT.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Complaint_Status_RPT.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\Complain_Priorties_RPT.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Complain_Priorties_RPT.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\Respondent_Gender_RPT.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Respondent_Gender_RPT.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\_ComplaintTypeReport.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>_ComplaintTypeReport.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\_HQ_DecisionRPT.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>_HQ_DecisionRPT.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\_PECC_DecisionRPT.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>_PECC_DecisionRPT.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\_RespondentTypeReport.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>_RespondentTypeReport.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\_SanctionTypeReport.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>_SanctionTypeReport.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\_StaticReportRpt.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>_StaticReportRpt.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\_StatusTypeReport.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>_StatusTypeReport.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+    <Folder Include="EntryForms\uploadfile\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v9.0\WebApplications\Microsoft.WebApplication.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>26303</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>
+          </IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

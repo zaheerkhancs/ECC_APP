@@ -1,0 +1,109 @@
+<Configuration>
+  <SettingsComponent>
+    <string />
+    <integer />
+    <boolean>
+      <setting name="SolutionAnalysisEnabled">False</setting>
+    </boolean>
+  </SettingsComponent>
+  <NAntValidationSettings>
+    <NAntPath value="" />
+  </NAntValidationSettings>
+  <RecentFiles>
+    <RecentFiles>
+      <File id="7ECB9C36-686F-45B4-8A0C-F71319936046/d:Reports/f:_SanctionTypeRPT.aspx.cs" caret="0" fromTop="0" />
+      <File id="7ECB9C36-686F-45B4-8A0C-F71319936046/d:Reports/f:_PECC_Decision.aspx.cs" caret="0" fromTop="0" />
+      <File id="7ECB9C36-686F-45B4-8A0C-F71319936046/d:Reports/f:_HQ_Decision.aspx.cs" caret="0" fromTop="0" />
+      <File id="7ECB9C36-686F-45B4-8A0C-F71319936046/d:Reports/f:Complaint_ComplainType.aspx.cs" caret="0" fromTop="0" />
+      <File id="7ECB9C36-686F-45B4-8A0C-F71319936046/d:Reports/f:Complaint_Candidate.aspx.cs" caret="0" fromTop="0" />
+      <File id="7ECB9C36-686F-45B4-8A0C-F71319936046/d:Reports/f:Complaint_Allegation.aspx.cs" caret="0" fromTop="0" />
+      <File id="7ECB9C36-686F-45B4-8A0C-F71319936046/d:Reports/f:Complaint_Respondent.aspx.cs" caret="0" fromTop="0" />
+      <File id="7ECB9C36-686F-45B4-8A0C-F71319936046/d:Reports/f:Complain_Priorties.aspx.cs" caret="0" fromTop="0" />
+      <File id="7ECB9C36-686F-45B4-8A0C-F71319936046/d:Reports/f:Complaint_Status.aspx.cs" caret="0" fromTop="0" />
+      <File id="7ECB9C36-686F-45B4-8A0C-F71319936046/d:Reports/f:Complaint_Sanction.aspx.cs" caret="0" fromTop="0" />
+      <File id="7ECB9C36-686F-45B4-8A0C-F71319936046/d:Reports/f:ComplaintStatusA.aspx.cs" caret="0" fromTop="0" />
+      <File id="7ECB9C36-686F-45B4-8A0C-F71319936046/d:Reports/f:Complaint_Gender.aspx.cs" caret="0" fromTop="0" />
+      <File id="7ECB9C36-686F-45B4-8A0C-F71319936046/d:EntryForms/f:ComplainDetail.aspx.cs" caret="0" fromTop="0" />
+      <File id="7ECB9C36-686F-45B4-8A0C-F71319936046/d:EntryForms/f:ComplainList.aspx.cs" caret="0" fromTop="0" />
+      <File id="7ECB9C36-686F-45B4-8A0C-F71319936046/d:CommonMessages/f:CommonMessages.xml" caret="374" fromTop="10" />
+      <File id="0728CFBA-C1F5-457F-BF8F-63BE3BEBD43E/f:Message.cs" caret="12862" fromTop="646" />
+      <File id="7ECB9C36-686F-45B4-8A0C-F71319936046/d:Reports/f:_ComplaintTypeRPT.aspx.cs" caret="525" fromTop="0" />
+      <File id="7ECB9C36-686F-45B4-8A0C-F71319936046/d:Reports/f:_StatusTypeRPT.aspx.cs" caret="2416" fromTop="18" />
+      <File id="7ECB9C36-686F-45B4-8A0C-F71319936046/d:Lookups/f:Case_Priorty.aspx.designer.cs" caret="0" fromTop="0" />
+      <File id="7ECB9C36-686F-45B4-8A0C-F71319936046/d:Lookups/f:Case_Priorty.aspx" caret="0" fromTop="0" />
+      <File id="7ECB9C36-686F-45B4-8A0C-F71319936046/d:Lookups/f:Case_Priorty.aspx.cs" caret="0" fromTop="0" />
+      <File id="7ECB9C36-686F-45B4-8A0C-F71319936046/d:Admin/f:AdministrationList.aspx.cs" caret="0" fromTop="0" />
+      <File id="7ECB9C36-686F-45B4-8A0C-F71319936046/d:Search_Panel/f:SearchFrm.aspx.cs" caret="0" fromTop="0" />
+      <File id="7ECB9C36-686F-45B4-8A0C-F71319936046/d:EntryForms/f:ExcelBulkUpload.aspx.cs" caret="0" fromTop="0" />
+      <File id="7ECB9C36-686F-45B4-8A0C-F71319936046/d:Admin/f:UnauthorizedAccess.aspx.cs" caret="0" fromTop="0" />
+      <File id="0728CFBA-C1F5-457F-BF8F-63BE3BEBD43E/f:aspnet_ApplicationsRow_Base.cs" caret="0" fromTop="0" />
+      <File id="7ECB9C36-686F-45B4-8A0C-F71319936046/d:bin/f:dbConnection.xml" caret="0" fromTop="0" />
+      <File id="7ECB9C36-686F-45B4-8A0C-F71319936046/d:Reports/f:_StaticReport.aspx.cs" caret="839" fromTop="16" />
+      <File id="7ECB9C36-686F-45B4-8A0C-F71319936046/d:EntryForms/f:ManageComplain.aspx.cs" caret="400" fromTop="2" />
+      <File id="0728CFBA-C1F5-457F-BF8F-63BE3BEBD43E/f:tblComplain.cs" caret="407" fromTop="19" />
+    </RecentFiles>
+    <RecentEdits>
+      <File id="7ECB9C36-686F-45B4-8A0C-F71319936046/d:CommonMessages/f:CommonMessages.xml" caret="54" fromTop="2" />
+      <File id="0728CFBA-C1F5-457F-BF8F-63BE3BEBD43E/f:Message.cs" caret="7849" fromTop="20" />
+      <File id="0728CFBA-C1F5-457F-BF8F-63BE3BEBD43E/f:ECCCommon.cs" caret="23410" fromTop="588" />
+      <File id="0728CFBA-C1F5-457F-BF8F-63BE3BEBD43E/f:tblComplain.cs" caret="1664" fromTop="20" />
+      <File id="0728CFBA-C1F5-457F-BF8F-63BE3BEBD43E/f:tblComplain.cs" caret="2063" fromTop="15" />
+      <File id="0728CFBA-C1F5-457F-BF8F-63BE3BEBD43E/f:tblComplain.cs" caret="986" fromTop="11" />
+      <File id="0728CFBA-C1F5-457F-BF8F-63BE3BEBD43E/f:tblComplain.cs" caret="1282" fromTop="12" />
+      <File id="0728CFBA-C1F5-457F-BF8F-63BE3BEBD43E/f:tblComplain.cs" caret="2205" fromTop="16" />
+      <File id="0728CFBA-C1F5-457F-BF8F-63BE3BEBD43E/f:tblComplain.cs" caret="2535" fromTop="8" />
+      <File id="0728CFBA-C1F5-457F-BF8F-63BE3BEBD43E/f:tblComplain.cs" caret="2973" fromTop="16" />
+      <File id="0728CFBA-C1F5-457F-BF8F-63BE3BEBD43E/f:tblComplain.cs" caret="3352" fromTop="23" />
+      <File id="0728CFBA-C1F5-457F-BF8F-63BE3BEBD43E/f:tblComplain.cs" caret="3729" fromTop="25" />
+      <File id="0728CFBA-C1F5-457F-BF8F-63BE3BEBD43E/f:tblComplain.cs" caret="3865" fromTop="21" />
+      <File id="0728CFBA-C1F5-457F-BF8F-63BE3BEBD43E/f:tblComplain.cs" caret="4207" fromTop="24" />
+      <File id="0728CFBA-C1F5-457F-BF8F-63BE3BEBD43E/f:tblComplain.cs" caret="4595" fromTop="19" />
+      <File id="0728CFBA-C1F5-457F-BF8F-63BE3BEBD43E/f:tblComplain.cs" caret="4985" fromTop="27" />
+      <File id="0728CFBA-C1F5-457F-BF8F-63BE3BEBD43E/f:tblComplain.cs" caret="5357" fromTop="20" />
+      <File id="0728CFBA-C1F5-457F-BF8F-63BE3BEBD43E/f:tblComplain.cs" caret="5747" fromTop="19" />
+      <File id="0728CFBA-C1F5-457F-BF8F-63BE3BEBD43E/f:tblComplain.cs" caret="6123" fromTop="27" />
+      <File id="0728CFBA-C1F5-457F-BF8F-63BE3BEBD43E/f:tblComplain.cs" caret="6502" fromTop="18" />
+      <File id="0728CFBA-C1F5-457F-BF8F-63BE3BEBD43E/f:tblComplain.cs" caret="6871" fromTop="26" />
+      <File id="0728CFBA-C1F5-457F-BF8F-63BE3BEBD43E/f:tblComplain.cs" caret="7492" fromTop="21" />
+      <File id="0728CFBA-C1F5-457F-BF8F-63BE3BEBD43E/f:tblComplain.cs" caret="7790" fromTop="28" />
+      <File id="0728CFBA-C1F5-457F-BF8F-63BE3BEBD43E/f:tblComplain.cs" caret="8090" fromTop="10" />
+      <File id="0728CFBA-C1F5-457F-BF8F-63BE3BEBD43E/f:tblComplain.cs" caret="8757" fromTop="24" />
+      <File id="0728CFBA-C1F5-457F-BF8F-63BE3BEBD43E/f:tblComplain.cs" caret="9097" fromTop="25" />
+      <File id="0728CFBA-C1F5-457F-BF8F-63BE3BEBD43E/f:tblComplain.cs" caret="10705" fromTop="14" />
+      <File id="0728CFBA-C1F5-457F-BF8F-63BE3BEBD43E/f:tblComplain.cs" caret="11811" fromTop="25" />
+      <File id="0728CFBA-C1F5-457F-BF8F-63BE3BEBD43E/f:tblComplain.cs" caret="8445" fromTop="19" />
+      <File id="7ECB9C36-686F-45B4-8A0C-F71319936046/d:Reports/f:_StaticReport.aspx.cs" caret="2518" fromTop="26" />
+    </RecentEdits>
+  </RecentFiles>
+  <UnitTestRunner>
+    <Providers />
+  </UnitTestRunner>
+  <CompletionStatisticsManager>
+    <ItemStatistics item="Default">
+      <Item value="ScriptManager1" priority="0" />
+      <Item value="SqlCommand" priority="1" />
+      <Item value="objDB" priority="1" />
+      <Item value="true" priority="0" />
+      <Item value="ExportOptions" priority="0" />
+      <Item value="ex" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:IOM.ECCMS.ECCDB.ECCMS">
+      <Item value="CreateCommand" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:ECC_App._StaticReport">
+      <Item value="lblNoDataMsg" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Web.UI.WebControls.Label">
+      <Item value="Text" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@CrystalDecisions.Shared.ExportOptions">
+      <Item value="CreateDiskFileDestinationOptions" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Exception">
+      <Item value="Message" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.String">
+      <Item value="ToString" priority="0" />
+    </ItemStatistics>
+  </CompletionStatisticsManager>
+</Configuration>

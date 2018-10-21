@@ -1,0 +1,49 @@
+<Configuration>
+  <SettingsComponent>
+    <string />
+    <integer />
+    <boolean>
+      <setting name="SolutionAnalysisEnabled">False</setting>
+    </boolean>
+  </SettingsComponent>
+  <RecentFiles>
+    <RecentFiles>
+      <File id="7ECB9C36-686F-45B4-8A0C-F71319936046/d:EntryForms/f:ManageComplain.aspx.cs" caret="16791" fromTop="325" />
+      <File id="7ECB9C36-686F-45B4-8A0C-F71319936046/d:bin/f:dbConnection.xml" caret="103" fromTop="3" />
+      <File id="0728CFBA-C1F5-457F-BF8F-63BE3BEBD43E/f:ECCMS.cs" caret="1625" fromTop="49" />
+      <File id="0728CFBA-C1F5-457F-BF8F-63BE3BEBD43E/f:ECCMS_Base.cs" caret="590" fromTop="17" />
+      <File id="7ECB9C36-686F-45B4-8A0C-F71319936046/d:EntryForms/f:ComplainDetail.aspx.cs" caret="950" fromTop="18" />
+      <File id="7ECB9C36-686F-45B4-8A0C-F71319936046/d:Lookups/f:Case_Priorty.aspx.cs" caret="715" fromTop="8" />
+      <File id="7ECB9C36-686F-45B4-8A0C-F71319936046/d:Admin/f:Login.aspx.cs" caret="2347" fromTop="20" />
+      <File id="7ECB9C36-686F-45B4-8A0C-F71319936046/f:Web.config" caret="1598" fromTop="16" />
+      <File id="7ECB9C36-686F-45B4-8A0C-F71319936046/d:BaseController/f:BaseController.cs" caret="514" fromTop="0" />
+      <File id="0728CFBA-C1F5-457F-BF8F-63BE3BEBD43E/f:ECCCommon.cs" caret="10323" fromTop="29" />
+      <File id="0728CFBA-C1F5-457F-BF8F-63BE3BEBD43E/f:Message.cs" caret="379" fromTop="0" />
+      <File id="7ECB9C36-686F-45B4-8A0C-F71319936046/d:EntryForms/f:ComplainList.aspx.cs" caret="2274" fromTop="0" />
+      <File id="0728CFBA-C1F5-457F-BF8F-63BE3BEBD43E/f:tblComplain.cs" caret="9481" fromTop="0" />
+      <File id="7ECB9C36-686F-45B4-8A0C-F71319936046/d:Search_Panel/f:SearchFrm.aspx.cs" caret="428" fromTop="17" />
+      <File id="7ECB9C36-686F-45B4-8A0C-F71319936046/d:EntryForms/f:ComplainDetail.aspx" caret="0" fromTop="0" />
+      <File id="7ECB9C36-686F-45B4-8A0C-F71319936046/d:MasterPages/f:MainPage.Master" caret="0" fromTop="0" />
+      <File id="7ECB9C36-686F-45B4-8A0C-F71319936046/d:Lookups/f:Case_Priorty.aspx" caret="2662" fromTop="5" />
+      <File id="7ECB9C36-686F-45B4-8A0C-F71319936046/d:EntryForms/f:ManageComplain.aspx" caret="2069" fromTop="9" />
+    </RecentFiles>
+    <RecentEdits>
+      <File id="7ECB9C36-686F-45B4-8A0C-F71319936046/f:Web.config" caret="2964" fromTop="27" />
+      <File id="7ECB9C36-686F-45B4-8A0C-F71319936046/f:Web.config" caret="2485" fromTop="18" />
+      <File id="7ECB9C36-686F-45B4-8A0C-F71319936046/d:bin/f:dbConnection.xml" caret="103" fromTop="3" />
+      <File id="0728CFBA-C1F5-457F-BF8F-63BE3BEBD43E/f:ECCMS_Base.cs" caret="11635" fromTop="4" />
+      <File id="7ECB9C36-686F-45B4-8A0C-F71319936046/d:Admin/f:Login.aspx.cs" caret="1927" fromTop="10" />
+      <File id="7ECB9C36-686F-45B4-8A0C-F71319936046/d:Admin/f:Login.aspx.cs" caret="2347" fromTop="20" />
+    </RecentEdits>
+  </RecentFiles>
+  <NAntValidationSettings>
+    <NAntPath value="" />
+  </NAntValidationSettings>
+  <UnitTestRunner>
+    <Providers />
+  </UnitTestRunner>
+  <UnitTestRunnerNUnit>
+    <NUnitInstallDir IsNull="False" />
+    <UseAddins>Never</UseAddins>
+  </UnitTestRunnerNUnit>
+</Configuration>

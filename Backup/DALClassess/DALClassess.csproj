@@ -1,0 +1,168 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="3.5" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{0728CFBA-C1F5-457F-BF8F-63BE3BEBD43E}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>DALClassess</RootNamespace>
+    <AssemblyName>DALClassess</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="aspnet_ApplicationsCollection.cs" />
+    <Compile Include="aspnet_ApplicationsCollection_Base.cs" />
+    <Compile Include="aspnet_ApplicationsRow.cs" />
+    <Compile Include="aspnet_ApplicationsRow_Base.cs" />
+    <Compile Include="aspnet_MembershipCollection.cs" />
+    <Compile Include="aspnet_MembershipCollection_Base.cs" />
+    <Compile Include="aspnet_MembershipRow.cs" />
+    <Compile Include="aspnet_MembershipRow_Base.cs" />
+    <Compile Include="aspnet_PathsCollection.cs" />
+    <Compile Include="aspnet_PathsCollection_Base.cs" />
+    <Compile Include="aspnet_PathsRow.cs" />
+    <Compile Include="aspnet_PathsRow_Base.cs" />
+    <Compile Include="aspnet_PersonalizationAllUsersCollection.cs" />
+    <Compile Include="aspnet_PersonalizationAllUsersCollection_Base.cs" />
+    <Compile Include="aspnet_PersonalizationAllUsersRow.cs" />
+    <Compile Include="aspnet_PersonalizationAllUsersRow_Base.cs" />
+    <Compile Include="aspnet_PersonalizationPerUserCollection.cs" />
+    <Compile Include="aspnet_PersonalizationPerUserCollection_Base.cs" />
+    <Compile Include="aspnet_PersonalizationPerUserRow.cs" />
+    <Compile Include="aspnet_PersonalizationPerUserRow_Base.cs" />
+    <Compile Include="aspnet_ProfileCollection.cs" />
+    <Compile Include="aspnet_ProfileCollection_Base.cs" />
+    <Compile Include="aspnet_ProfileRow.cs" />
+    <Compile Include="aspnet_ProfileRow_Base.cs" />
+    <Compile Include="aspnet_RolesCollection.cs" />
+    <Compile Include="aspnet_RolesCollection_Base.cs" />
+    <Compile Include="aspnet_RolesRow.cs" />
+    <Compile Include="aspnet_RolesRow_Base.cs" />
+    <Compile Include="aspnet_SchemaVersionsCollection.cs" />
+    <Compile Include="aspnet_SchemaVersionsCollection_Base.cs" />
+    <Compile Include="aspnet_SchemaVersionsRow.cs" />
+    <Compile Include="aspnet_SchemaVersionsRow_Base.cs" />
+    <Compile Include="aspnet_UsersCollection.cs" />
+    <Compile Include="aspnet_UsersCollection_Base.cs" />
+    <Compile Include="aspnet_UsersInRolesCollection.cs" />
+    <Compile Include="aspnet_UsersInRolesCollection_Base.cs" />
+    <Compile Include="aspnet_UsersInRolesRow.cs" />
+    <Compile Include="aspnet_UsersInRolesRow_Base.cs" />
+    <Compile Include="aspnet_UsersRow.cs" />
+    <Compile Include="aspnet_UsersRow_Base.cs" />
+    <Compile Include="aspnet_WebEvent_EventsCollection.cs" />
+    <Compile Include="aspnet_WebEvent_EventsCollection_Base.cs" />
+    <Compile Include="aspnet_WebEvent_EventsRow.cs" />
+    <Compile Include="aspnet_WebEvent_EventsRow_Base.cs" />
+    <Compile Include="ECCCommon.cs" />
+    <Compile Include="ECCMS.cs" />
+    <Compile Include="ECCMS_Base.cs" />
+    <Compile Include="lkpAllegationtypeCollection.cs" />
+    <Compile Include="lkpAllegationtypeCollection_Base.cs" />
+    <Compile Include="lkpAllegationtypeRow.cs" />
+    <Compile Include="lkpAllegationtypeRow_Base.cs" />
+    <Compile Include="lkpBitCollection.cs" />
+    <Compile Include="lkpBitCollection_Base.cs" />
+    <Compile Include="lkpBitRow.cs" />
+    <Compile Include="lkpBitRow_Base.cs" />
+    <Compile Include="lkpCandidateCollection.cs" />
+    <Compile Include="lkpCandidateCollection_Base.cs" />
+    <Compile Include="lkpCandidateRow.cs" />
+    <Compile Include="lkpCandidateRow_Base.cs" />
+    <Compile Include="lkpCasepriorityCollection.cs" />
+    <Compile Include="lkpCasepriorityCollection_Base.cs" />
+    <Compile Include="lkpCasepriorityRow.cs" />
+    <Compile Include="lkpCasepriorityRow_Base.cs" />
+    <Compile Include="lkpComplainanttypeCollection.cs" />
+    <Compile Include="lkpComplainanttypeCollection_Base.cs" />
+    <Compile Include="lkpComplainanttypeRow.cs" />
+    <Compile Include="lkpComplainanttypeRow_Base.cs" />
+    <Compile Include="lkpDistrictCollection.cs" />
+    <Compile Include="lkpDistrictCollection_Base.cs" />
+    <Compile Include="lkpDistrictRow.cs" />
+    <Compile Include="lkpDistrictRow_Base.cs" />
+    <Compile Include="lkpGendersCollection.cs" />
+    <Compile Include="lkpGendersCollection_Base.cs" />
+    <Compile Include="lkpGendersRow.cs" />
+    <Compile Include="lkpGendersRow_Base.cs" />
+    <Compile Include="lkpPollingCenterCollection.cs" />
+    <Compile Include="lkpPollingCenterCollection_Base.cs" />
+    <Compile Include="lkpPollingCenterRow.cs" />
+    <Compile Include="lkpPollingCenterRow_Base.cs" />
+    <Compile Include="lkpProvinceCollection.cs" />
+    <Compile Include="lkpProvinceCollection_Base.cs" />
+    <Compile Include="lkpProvinceRow.cs" />
+    <Compile Include="lkpProvinceRow_Base.cs" />
+    <Compile Include="lkpRespondanttypeCollection.cs" />
+    <Compile Include="lkpRespondanttypeCollection_Base.cs" />
+    <Compile Include="lkpRespondanttypeRow.cs" />
+    <Compile Include="lkpRespondanttypeRow_Base.cs" />
+    <Compile Include="lkpResponsibleOfficeCollection.cs" />
+    <Compile Include="lkpResponsibleOfficeCollection_Base.cs" />
+    <Compile Include="lkpResponsibleOfficeRow.cs" />
+    <Compile Include="lkpResponsibleOfficeRow_Base.cs" />
+    <Compile Include="lkpSanctionCollection.cs" />
+    <Compile Include="lkpSanctionCollection_Base.cs" />
+    <Compile Include="lkpSanctionRow.cs" />
+    <Compile Include="lkpSanctionRow_Base.cs" />
+    <Compile Include="lkpStatusCollection.cs" />
+    <Compile Include="lkpStatusCollection_Base.cs" />
+    <Compile Include="lkpStatusRow.cs" />
+    <Compile Include="lkpStatusRow_Base.cs" />
+    <Compile Include="Message.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="tblComplain.cs" />
+    <Compile Include="tblComplainCollection.cs" />
+    <Compile Include="tblComplainCollection_Base.cs" />
+    <Compile Include="tblComplainRow.cs" />
+    <Compile Include="tblComplainRow_Base.cs" />
+    <Compile Include="tblRecentLogCollection.cs" />
+    <Compile Include="tblRecentLogCollection_Base.cs" />
+    <Compile Include="tblRecentLogRow.cs" />
+    <Compile Include="tblRecentLogRow_Base.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

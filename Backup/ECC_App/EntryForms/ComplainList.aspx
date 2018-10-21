@@ -1,0 +1,80 @@
+﻿<%@ Page Language="C#" AutoEventWireup="true" MasterPageFile="~/MasterPages/MainPage.Master" CodeBehind="ComplainList.aspx.cs" Inherits="ECC_App.ComplainList"  %>
+<%@ Register assembly="AjaxControlToolkit" namespace="AjaxControlToolkit" tagprefix="cc1" %>
+<asp:Content ID="Content1" ContentPlaceHolderID="head" runat="Server">
+</asp:Content>
+<asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="Server">
+    <asp:ScriptManager ID="ScriptManager1" runat="server">
+    </asp:ScriptManager> 
+    <asp:UpdatePanel ID="UpdatePanel1" runat="server">
+    <ContentTemplate>
+    <table width="910" border="0" cellspacing="0" cellpadding="2px;">
+  <tr>
+  <td style="font-size: small; font-weight: 700; text-align: center">
+      <asp:Panel ID="pnlSearch" runat="server">
+          Select Province:<asp:DropDownList ID="drpProvince" runat="server" 
+          AutoPostBack="True"  Width="147px" 
+          onselectedindexchanged="drpProvince_SelectedIndexChanged">
+      </asp:DropDownList>
+          <br />
+          <asp:Label ID="lblNoDataMsg" runat="server" style="color: #FF0000"></asp:Label>
+      </asp:Panel>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  </td>
+  </tr>
+  <tr>
+   <td>
+       <asp:GridView ID="_gvList" runat="server" AutoGenerateColumns="False" 
+           Width="100%" Font-Names="Tahoma" Font-Size="Small" AllowPaging="True" 
+           AllowSorting="True" onpageindexchanging="_gvList_PageIndexChanging" 
+           onsorting="_gvList_Sorting">
+           <Columns>
+               <asp:TemplateField>
+                   <ItemTemplate>
+                       <asp:ImageButton ID="imgDetail" runat="server" 
+                           CommandArgument='<%# Eval("CaseID") %>' ImageUrl="~/images/view.gif" 
+                           oncommand="imgDetail_Command" />
+                   </ItemTemplate>
+               </asp:TemplateField>
+               <asp:TemplateField>
+                   <ItemTemplate>
+                       <asp:ImageButton ID="imgEdit" runat="server" ImageUrl="~/images/edt.gif" 
+                           Width="16px" CommandArgument='<%# Eval("CaseID") %>' 
+                           oncommand="imgEdit_Command" />
+                   </ItemTemplate>
+               </asp:TemplateField>
+               <asp:TemplateField>
+                   <ItemTemplate>
+                       <asp:ImageButton ID="imgDelete" runat="server" ImageUrl="~/images/del.gif" 
+                           oncommand="imgDelete_Command" CommandArgument='<%# Eval("CaseID") %>' />
+                       <cc1:ConfirmButtonExtender ID="ConfirmButtonExtender1" runat="server" 
+                           ConfirmText="Are you sure you want to Delete this Complain?" 
+                           TargetControlID="imgDelete">
+                       </cc1:ConfirmButtonExtender>
+                   </ItemTemplate>
+               </asp:TemplateField>
+               <asp:BoundField DataField="CaseNo" HeaderText="Case No" ItemStyle-Width="100px" >
+                   <ItemStyle Width="80px" />
+               </asp:BoundField>
+               <asp:BoundField DataField="Sub_Date" DataFormatString="{0:d}" 
+                   HeaderText="Submission Date" />
+               <asp:BoundField DataField="BitName" HeaderText="Kuchi" ItemStyle-Width="50px">
+                   <ItemStyle Width="50px" />
+               </asp:BoundField>
+               <asp:BoundField DataField="CaseProName" HeaderText="Case Prority" />
+               <asp:BoundField DataField="Tri_Date" DataFormatString="{0:d}" 
+                   HeaderText="Triage Date" />
+               <asp:BoundField DataField="PolCen_Code" HeaderText="PC Code" />
+               <asp:BoundField DataField="District_Name" HeaderText="District" />
+               <asp:BoundField DataField="ProvNameEng" HeaderText="Province" />
+               <asp:BoundField DataField="Cand_No" HeaderText="Candidate No" />
+               <asp:BoundField DataField="Resp_OfficeName" HeaderText="Responsible Office" />
+               <asp:BoundField DataField="CaseID" HeaderText="CaseID" Visible="False" />
+           </Columns>
+           <AlternatingRowStyle CssClass="even" />
+       </asp:GridView>
+   </td>
+  </tr>
+</table>
+    </ContentTemplate>
+    </asp:UpdatePanel>
+</asp:Content>

@@ -1,0 +1,25 @@
+C:\Projects\ECC\DALClassess\DALClassess\bin\Debug\DALClassess.dll
+C:\Projects\ECC\DALClassess\DALClassess\bin\Debug\DALClassess.pdb
+C:\Projects\ECC\DALClassess\DALClassess\obj\Debug\ResolveAssemblyReference.cache
+C:\Projects\ECC\DALClassess\DALClassess\obj\Debug\DALClassess.dll
+C:\Projects\ECC\DALClassess\DALClassess\obj\Debug\DALClassess.pdb
+E:\Election Project\Database\ECC\ECC\ECC_APP\DALClassess\bin\Debug\DALClassess.dll
+E:\Election Project\Database\ECC\ECC\ECC_APP\DALClassess\bin\Debug\DALClassess.pdb
+E:\Election Project\Database\ECC\ECC\ECC_APP\DALClassess\obj\Debug\ResolveAssemblyReference.cache
+E:\Election Project\Database\ECC\ECC\ECC_APP\DALClassess\obj\Debug\DALClassess.dll
+E:\Election Project\Database\ECC\ECC\ECC_APP\DALClassess\obj\Debug\DALClassess.pdb
+C:\Projects\ECC_APP\DALClassess\bin\Debug\DALClassess.dll
+C:\Projects\ECC_APP\DALClassess\bin\Debug\DALClassess.pdb
+C:\Projects\ECC_APP\DALClassess\obj\Debug\ResolveAssemblyReference.cache
+C:\Projects\ECC_APP\DALClassess\obj\Debug\DALClassess.dll
+C:\Projects\ECC_APP\DALClassess\obj\Debug\DALClassess.pdb
+D:\Db codes and solution files\ECC_APP\DALClassess\bin\Debug\DALClassess.dll
+D:\Db codes and solution files\ECC_APP\DALClassess\bin\Debug\DALClassess.pdb
+D:\Db codes and solution files\ECC_APP\DALClassess\obj\Debug\ResolveAssemblyReference.cache
+D:\Db codes and solution files\ECC_APP\DALClassess\obj\Debug\DALClassess.dll
+D:\Db codes and solution files\ECC_APP\DALClassess\obj\Debug\DALClassess.pdb
+F:\Code-Solutions\ECC_APP\DALClassess\bin\Debug\DALClassess.dll
+F:\Code-Solutions\ECC_APP\DALClassess\bin\Debug\DALClassess.pdb
+F:\Code-Solutions\ECC_APP\DALClassess\obj\Debug\DALClassess.csprojResolveAssemblyReference.cache
+F:\Code-Solutions\ECC_APP\DALClassess\obj\Debug\DALClassess.dll
+F:\Code-Solutions\ECC_APP\DALClassess\obj\Debug\DALClassess.pdb
